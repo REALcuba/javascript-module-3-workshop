@@ -4,3 +4,28 @@
     background: #c1c1c1;
 
 }
+#pokemonName{
+    font-size: 20px;
+    font-style:italic;
+    color: cyan;
+}
+
+.hidden{
+    visibility: hidden
+}
+.type{
+  border: #c1c1c1 1px solid;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.electric{
+    background-color: rgb(183,238,3);
+}
+.grass {
+    background-color: #4f4;
+}
+
+.poison{
+    background-color: rgb(232,14, 225);
+}

@@ -33,7 +33,7 @@ function searchPokemon() {
     fetch("http://pokeapi.co/api/v2/pokemon/" + pokemonName)
     .then(res => res.json())
     .then(paintPokemon)
-    .catch(paintError )
+    .catch(paintError)
 }
  function paintPokemon(pokemon) {
      pokemonImg.src = pokemon.sprites.other["official-artwork"].front_default
@@ -42,5 +42,18 @@ function searchPokemon() {
          resultDiv.appendChild(buildType(type.type.name))
      })
      resultDiv.classList.remove("hidden")
+ }
+
+ function paintError(reason) {
+     resultDiv.classList.remove("hidden")
+ }
+
+ const buildType = (type) =>{
+   const element = document.createElement("div")
+   element.classList.add("type")
+element.classList.add(type.toLowerCase())
+   element.innerText = type
+   return element
+
  }
 
