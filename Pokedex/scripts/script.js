@@ -38,7 +38,7 @@ function searchPokemon() {
  function paintPokemon(pokemon) {
      pokemonImg.src = pokemon.sprites.other["official-artwork"].front_default
      pokemonName.innerText = pokemon.name
-     pokemon.type.forEach(type => {
+     pokemon.types.forEach(type => {
          resultDiv.appendChild(buildType(type.type.name))
      })
      resultDiv.classList.remove("hidden")
@@ -51,7 +51,7 @@ function searchPokemon() {
  const buildType = (type) =>{
    const element = document.createElement("div")
    element.classList.add("type")
-element.classList.add(type.toLowerCase())
+   element.classList.add(type.toLowerCase())
    element.innerText = type
    return element
 
