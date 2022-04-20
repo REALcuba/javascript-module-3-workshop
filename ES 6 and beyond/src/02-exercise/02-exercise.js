@@ -41,7 +41,9 @@
  */
 
 // Finish the code of the function
-function exercise02() {}
+function exercise02() {
+ 
+}
 
 // Don’t change the code bellow this line
 export default exercise02;
