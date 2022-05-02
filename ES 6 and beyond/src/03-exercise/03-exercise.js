@@ -25,7 +25,10 @@
  */
 
 // Finish the code of the function
-const exercise03 = () => {};
+const exercise03 = (a, b, ...rest) => {
+    const restArr = rest
+    return restArr
+};
 
 // Don’t change the code bellow this line
 export default exercise03;
